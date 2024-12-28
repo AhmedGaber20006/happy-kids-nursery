@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Kids</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff7043;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .main-image {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        section h2 {
+            font-size: 30px;
+            color: #ff9800;
+        }
+
+        img {
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: #ff7043;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about-info {
+            margin-top: 30px;
+            font-size: 20px;
+            color: #333;
+            padding: 0 20px;
+        }
+
+        footer {
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: left;
+            font-size: 12px;
+            color: white;
+            margin-left: 10px;
+        }
+
+        /* Styles for the comment section */
+        .comment-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: right;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .comment-section h3 {
+            font-size: 24px;
+            color: #ff7043;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            resize: none;
+        }
+
+        .comment-form button {
+            background-color: #ff7043;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .comment-form button:hover {
+            background-color: #ff5722;
+        }
+
+        /* Star Rating Styles */
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            font-size: 30px;
+            color: #ccc;
+        }
+
+        .star {
+            cursor: pointer;
+        }
+
+        .star.selected {
+            color: #ff7043; /* اللون الذي سيظهر عند تحديد النجم */
+        }
+
+        .star:hover {
+            color: #ff7043; /* اللون الذي يظهر عند المرور على النجمة */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="happy kids 1.jpg" alt="Happy Kids 1" class="main-image">
+        <div>
+            <h1>Welcome to Happy Kids!</h1>
+            <p>عنوان: المعادي الجديدة، عمارات الكويتيه، عماره 16 أ، المرحلة الثالثة، أمام مستشفى اليوم الواحد</p>
+            <p>للحجز والاستفسار: 01117447081 (واتس/ فون)</p>
+        </div>
+    </header>
+
+    <section>
+        <h2>إدارة ميس رباب</h2>
+        <img src="happy kids 2.jpg" alt="Happy Kids 2" width="300">
+        <img src="happy kids 3.jpg" alt="Happy Kids 3" width="300">
+    </section>
+
+    <div class="about-info">
+        <p>نحن في هابي كيدز نقدم بيئة تعليمية ممتعة وآمنة للأطفال. نركز على تطوير مهاراتهم الاجتماعية والتعليمية من خلال أنشطة مبدعة وألعاب تعليمية. فريقنا المؤهل يعمل على توفير أفضل تجربة تعليمية للأطفال في جو مليء بالحب والرعاية.</p>
+    </div>
+
+    <div class="contact-info">
+        <p>يشرفنا زيارتكوا لصفحتنا على الفيس بوك: <a href="https://www.facebook.com/Happykids12409" target="_blank">Happy Kids Facebook</a></p>
+    </div>
+
+    <!-- Comment Section -->
+    <div class="comment-section">
+        <h3>أضف تعليقك</h3>
+        <form class="comment-form">
+            <textarea placeholder="اكتب تعليقك هنا..."></textarea><br>
+            <button type="submit">إرسال التعليق</button>
+        </form>
+        
+        <!-- Star Rating Section -->
+        <div class="star-rating">
+            <h3>تقييمنا بالنجوم</h3>
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+            <p id="rating-value">التقييم: 0 نجوم</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Happy Kids. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // التفاعل مع النجوم
+        const stars = document.querySelectorAll('.star');
+        const ratingValue = document.getElementById('rating-value');
+        
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                const value = this.getAttribute('data-value');
+                updateRating(value);
+            });
+        });
+        
+        function updateRating(value) {
+            // إزالة الاختيار السابق
+            stars.forEach(star => {
+                star.classList.remove('selected');
+            });
+            
+            // تحديد النجوم التي تم اختيارها
+            for (let i = 0; i < value; i++) {
+                stars[i].classList.add('selected');
+            }
+            
+            // عرض التقييم
+            ratingValue.textContent = `التقييم: ${value} نجوم`;
+        }
+    </script>
+
+</body>
+</html>
